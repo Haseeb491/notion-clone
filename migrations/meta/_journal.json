@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1705257027552,
+      "tag": "0000_square_riptide",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1705259742721,
+      "tag": "0001_woozy_ego",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1705261469262,
+      "tag": "0002_funny_lady_deathstrike",
+      "breakpoints": true
+    }
+  ]
+}
