@@ -4,7 +4,7 @@ import { z } from "zod";
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { FormSchema } from "../types";
 import { cookies } from 'next/headers'
-
+// to login the user
 export async function actionLoginUser({ email, password }: z.infer<typeof FormSchema>) {
     const supabase = createRouteHandlerClient({ cookies });
     const response = await supabase.auth.signInWithPassword({
@@ -13,7 +13,7 @@ export async function actionLoginUser({ email, password }: z.infer<typeof FormSc
     });
     return response;
 }
-
+// to sign up the user
 export async function actionSignUpuser({ email, password }: z.infer<typeof FormSchema>) {
     const supabase = createRouteHandlerClient({ cookies });
     const { data } = await supabase
